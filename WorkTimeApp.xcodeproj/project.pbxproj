@@ -13,6 +13,7 @@
 		ED9CA8712AA86CED00E10E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA8702AA86CED00E10E65 /* ViewController.swift */; };
 		ED9CA8762AA86CEE00E10E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9CA8752AA86CEE00E10E65 /* Assets.xcassets */; };
 		ED9CA8792AA86CEE00E10E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9CA8772AA86CEE00E10E65 /* LaunchScreen.storyboard */; };
+		ED9CA8862AA8769700E10E65 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA8852AA8769700E10E65 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		ED9CA8752AA86CEE00E10E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED9CA8782AA86CEE00E10E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED9CA87A2AA86CEE00E10E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED9CA8852AA8769700E10E65 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		EEDC5352B8F84C5DE27BFDCD /* Pods_WorkTimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkTimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,7 +48,6 @@
 				4069125B90AD323468108DC7 /* Pods-WorkTimeApp.debug.xcconfig */,
 				A00B48A5A06937D02C66D4FB /* Pods-WorkTimeApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,7 @@
 		ED9CA86B2AA86CED00E10E65 /* WorkTimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				ED9CA8832AA874DB00E10E65 /* Resources */,
 				ED9CA8812AA86D6000E10E65 /* Application */,
 				ED9CA8802AA86D4700E10E65 /* SupportingFiles */,
 				ED9CA8702AA86CED00E10E65 /* ViewController.swift */,
@@ -105,6 +107,22 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		ED9CA8832AA874DB00E10E65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED9CA8842AA8754C00E10E65 /* Generated */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED9CA8842AA8754C00E10E65 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				ED9CA8852AA8769700E10E65 /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +135,7 @@
 				ED9CA8662AA86CED00E10E65 /* Frameworks */,
 				ED9CA8672AA86CED00E10E65 /* Resources */,
 				51A0D37DDF105CCE277CF77F /* [CP] Embed Pods Frameworks */,
+				ED9CA8822AA8747700E10E65 /* R.generate */,
 			);
 			buildRules = (
 			);
@@ -212,6 +231,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ED9CA8822AA8747700E10E65 /* R.generate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.generate;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/WorkTimeApp/Resources/Generated/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,6 +260,7 @@
 				ED9CA8712AA86CED00E10E65 /* ViewController.swift in Sources */,
 				ED9CA86D2AA86CED00E10E65 /* AppDelegate.swift in Sources */,
 				ED9CA86F2AA86CED00E10E65 /* SceneDelegate.swift in Sources */,
+				ED9CA8862AA8769700E10E65 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

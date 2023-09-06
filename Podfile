@@ -3,5 +3,7 @@ use_frameworks!
 
 target 'WorkTimeApp' do
 	pod 'SnapKit', '~> 5'
+  pod 'SwiftLint'
+  pod 'R.swift'
 
 end
