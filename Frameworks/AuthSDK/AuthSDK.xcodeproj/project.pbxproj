@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED9CA8A92AA8778A00E10E65 /* AuthApp.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9CA8A82AA8778A00E10E65 /* AuthApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED9CA8EA2AA886A000E10E65 /* AuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9CA8E92AA886A000E10E65 /* AuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED9CA8A52AA8778A00E10E65 /* AuthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED9CA8A82AA8778A00E10E65 /* AuthApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthApp.h; sourceTree = "<group>"; };
+		ED9CA8E62AA886A000E10E65 /* AuthSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9CA8E92AA886A000E10E65 /* AuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ED9CA8A22AA8778A00E10E65 /* Frameworks */ = {
+		ED9CA8E32AA886A000E10E65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -26,77 +26,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED9CA89B2AA8778A00E10E65 = {
+		ED9CA8DC2AA886A000E10E65 = {
 			isa = PBXGroup;
 			children = (
-				ED9CA8A72AA8778A00E10E65 /* AuthApp */,
-				ED9CA8A62AA8778A00E10E65 /* Products */,
+				ED9CA8E82AA886A000E10E65 /* AuthSDK */,
+				ED9CA8E72AA886A000E10E65 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ED9CA8A62AA8778A00E10E65 /* Products */ = {
+		ED9CA8E72AA886A000E10E65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED9CA8A52AA8778A00E10E65 /* AuthApp.framework */,
+				ED9CA8E62AA886A000E10E65 /* AuthSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED9CA8A72AA8778A00E10E65 /* AuthApp */ = {
+		ED9CA8E82AA886A000E10E65 /* AuthSDK */ = {
 			isa = PBXGroup;
 			children = (
-				ED9CA8A82AA8778A00E10E65 /* AuthApp.h */,
+				ED9CA8E92AA886A000E10E65 /* AuthSDK.h */,
 			);
-			path = AuthApp;
+			path = AuthSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		ED9CA8A02AA8778A00E10E65 /* Headers */ = {
+		ED9CA8E12AA886A000E10E65 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9CA8A92AA8778A00E10E65 /* AuthApp.h in Headers */,
+				ED9CA8EA2AA886A000E10E65 /* AuthSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		ED9CA8A42AA8778A00E10E65 /* AuthApp */ = {
+		ED9CA8E52AA886A000E10E65 /* AuthSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED9CA8AC2AA8778A00E10E65 /* Build configuration list for PBXNativeTarget "AuthApp" */;
+			buildConfigurationList = ED9CA8ED2AA886A000E10E65 /* Build configuration list for PBXNativeTarget "AuthSDK" */;
 			buildPhases = (
-				ED9CA8A02AA8778A00E10E65 /* Headers */,
-				ED9CA8A12AA8778A00E10E65 /* Sources */,
-				ED9CA8A22AA8778A00E10E65 /* Frameworks */,
-				ED9CA8A32AA8778A00E10E65 /* Resources */,
+				ED9CA8E12AA886A000E10E65 /* Headers */,
+				ED9CA8E22AA886A000E10E65 /* Sources */,
+				ED9CA8E32AA886A000E10E65 /* Frameworks */,
+				ED9CA8E42AA886A000E10E65 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AuthApp;
-			productName = AuthApp;
-			productReference = ED9CA8A52AA8778A00E10E65 /* AuthApp.framework */;
+			name = AuthSDK;
+			productName = AuthSDK;
+			productReference = ED9CA8E62AA886A000E10E65 /* AuthSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ED9CA89C2AA8778A00E10E65 /* Project object */ = {
+		ED9CA8DD2AA886A000E10E65 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					ED9CA8A42AA8778A00E10E65 = {
+					ED9CA8E52AA886A000E10E65 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = ED9CA89F2AA8778A00E10E65 /* Build configuration list for PBXProject "AuthApp" */;
+			buildConfigurationList = ED9CA8E02AA886A000E10E65 /* Build configuration list for PBXProject "AuthSDK" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,18 +104,18 @@
 				en,
 				Base,
 			);
-			mainGroup = ED9CA89B2AA8778A00E10E65;
-			productRefGroup = ED9CA8A62AA8778A00E10E65 /* Products */;
+			mainGroup = ED9CA8DC2AA886A000E10E65;
+			productRefGroup = ED9CA8E72AA886A000E10E65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED9CA8A42AA8778A00E10E65 /* AuthApp */,
+				ED9CA8E52AA886A000E10E65 /* AuthSDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ED9CA8A32AA8778A00E10E65 /* Resources */ = {
+		ED9CA8E42AA886A000E10E65 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ED9CA8A12AA8778A00E10E65 /* Sources */ = {
+		ED9CA8E22AA886A000E10E65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +135,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		ED9CA8AA2AA8778A00E10E65 /* Debug */ = {
+		ED9CA8EB2AA886A000E10E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,9 +186,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -196,7 +198,7 @@
 			};
 			name = Debug;
 		};
-		ED9CA8AB2AA8778A00E10E65 /* Release */ = {
+		ED9CA8EC2AA886A000E10E65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,16 +243,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		ED9CA8AD2AA8778A00E10E65 /* Debug */ = {
+		ED9CA8EE2AA886A000E10E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -264,31 +269,24 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.myorganizationApp.AuthApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myorganizationApp.AuthSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		ED9CA8AE2AA8778A00E10E65 /* Release */ = {
+		ED9CA8EF2AA886A000E10E65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -302,24 +300,17 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.myorganizationApp.AuthApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myorganizationApp.AuthSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED9CA89F2AA8778A00E10E65 /* Build configuration list for PBXProject "AuthApp" */ = {
+		ED9CA8E02AA886A000E10E65 /* Build configuration list for PBXProject "AuthSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED9CA8AA2AA8778A00E10E65 /* Debug */,
-				ED9CA8AB2AA8778A00E10E65 /* Release */,
+				ED9CA8EB2AA886A000E10E65 /* Debug */,
+				ED9CA8EC2AA886A000E10E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED9CA8AC2AA8778A00E10E65 /* Build configuration list for PBXNativeTarget "AuthApp" */ = {
+		ED9CA8ED2AA886A000E10E65 /* Build configuration list for PBXNativeTarget "AuthSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED9CA8AD2AA8778A00E10E65 /* Debug */,
-				ED9CA8AE2AA8778A00E10E65 /* Release */,
+				ED9CA8EE2AA886A000E10E65 /* Debug */,
+				ED9CA8EF2AA886A000E10E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ED9CA89C2AA8778A00E10E65 /* Project object */;
+	rootObject = ED9CA8DD2AA886A000E10E65 /* Project object */;
 }

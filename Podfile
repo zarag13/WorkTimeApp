@@ -8,5 +8,5 @@ target 'WorkTimeApp' do
   
   
   pod 'UIComponents', :path => './Frameworks/UIComponents'
-  pod 'AuthApp', :path => './Frameworks/AuthApp'
+  pod 'AuthSDK', :path => './Frameworks/AuthSDK'
 end
