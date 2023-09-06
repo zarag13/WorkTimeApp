@@ -7,6 +7,7 @@
 
 import Foundation
 
-public struct Constants {
-    
-}
+public struct Constants {}
+
+public typealias WTColor = R.color
+public typealias WTFont = R.font

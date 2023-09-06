@@ -3,8 +3,8 @@ use_frameworks!
 
 target 'WorkTimeApp' do
 	pod 'SnapKit', '~> 5'
-  pod 'SwiftLint'
-  pod 'R.swift'
+  pod 'SwiftLint', '~> 0'
+  pod 'R.swift', '~> 6'
   
   
   pod 'UIComponents', :path => './Frameworks/UIComponents'

@@ -20,9 +20,7 @@ public final class AuthViewController: BaseViewController {
     
     private let contentView = UIView()
     
-    private let loginTabButton = UIButton()
-    private let buttonDividerView = UILabel()
-    private let signUpTabButton = UIButton()
+    private let titleSwitchView = TWSwitchView()
     private let loginTextField = WTAuthTextField()
     private let passwordTextField = WTAuthTextField()
     
@@ -31,13 +29,11 @@ public final class AuthViewController: BaseViewController {
     override public func setup() {
         super.setup()
         setupContentView()
-        setupLoginTabButton()
-        setupButtonDividerView()
-        setupSignUpTabButton()
+        setupTitleSwitchView()
         setupLoginTextField()
         setupPasswordTextField()
         setupLoginButton()
-        view.backgroundColor = .white
+        view.backgroundColor = WTColor.background_g1()
     }
 }
 
@@ -51,30 +47,12 @@ private extension AuthViewController {
         }
     }
     
-    func setupLoginTabButton() {
-        contentView.addSubview(loginTabButton)
-        loginTabButton.setTitle("Login", for: .normal)
-        loginTabButton.setTitleColor(.black, for: .normal)
-        loginTabButton.snp.makeConstraints {
+    func setupTitleSwitchView() {
+        contentView.addSubview(titleSwitchView)
+        titleSwitchView.titles = ("Login", "Sign Up")
+        titleSwitchView.snp.makeConstraints {
             $0.top.equalToSuperview()
             $0.leading.equalToSuperview().inset(Constants.horizontalOffset)
-        }
-    }
-    func setupButtonDividerView() {
-        contentView.addSubview(buttonDividerView)
-        buttonDividerView.text = "/"
-        buttonDividerView.snp.makeConstraints {
-            $0.centerY.equalTo(loginTabButton)
-            $0.leading.equalTo(loginTabButton.snp.trailing).offset(Constants.buttonDividerOffset)
-        }
-    }
-    func setupSignUpTabButton() {
-        contentView.addSubview(signUpTabButton)
-        signUpTabButton.setTitle("Sign Up", for: .normal)
-        signUpTabButton.setTitleColor(.black, for: .normal)
-        signUpTabButton.snp.makeConstraints {
-            $0.bottom.equalTo(loginTabButton)
-            $0.leading.equalTo(buttonDividerView.snp.trailing).offset(Constants.buttonDividerOffset)
         }
     }
     
@@ -86,7 +64,7 @@ private extension AuthViewController {
         loginTextField.placeholder = "Username"
         
         loginTextField.snp.makeConstraints {
-            $0.top.equalTo(loginTabButton.snp.bottom).offset(Constants.interItemOffset)
+            $0.top.equalTo(titleSwitchView.snp.bottom).offset(Constants.interItemOffset)
             $0.leading.equalToSuperview().inset(Constants.horizontalOffset)
             $0.height.equalTo(Constants.fieldHeight)
         }
