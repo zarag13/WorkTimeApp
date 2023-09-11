@@ -51,7 +51,9 @@ open class TWSwitchView: BaseView {
     
     override func setup() {
         super.setup()
+        
         UIFont.registerFonts(from: Bundle.uiComponents)
+        
         setupButton()
         setupSeparatorView()
         setupFirstLabel()
@@ -101,7 +103,6 @@ private extension TWSwitchView {
             $0.trailing.equalToSuperview()
             $0.leading.equalTo(separatorView.snp.trailing).offset(10)
             $0.bottom.equalToSuperview().inset(2.5)
-            
         }
     }
 }
